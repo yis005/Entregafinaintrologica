@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros deseados</title>
+<link rel="stylesheet" href="Stilelib.css">
+<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/check-form_116472.png">
+    
+</head>
+<body>
+   <header>
+   <nav>
+        <a href="index.html">Pagina principal</a>
+        <a href="contacto.html"> Contactos</a>
+        <a class="nav-link" href="formularios.html">Registro de solicitud</a>
+    </nav>
+    </header>
+
+ <div class="carrusel1libros">
+        <div class="carousel-item active">
+            <img src="images/bannerestes.jpeg" class="d-block w-100" alt="...">
+        </div>
+
+    <h2>Registrar Libro</h2>
+
+    <label>Título: <input type="text" id="titulo"></label>
+    <label>Autor: <input type="text" id="autor"></label>
+    <button onclick="agregarLibro()">Agregar</button>
+
+    <h3>Lista de Libros deseados</h3>
+    <ul id="listaLibros"></ul>
+
+    <script>
+        function agregarLibro() {
+            const titulo = document.getElementById('titulo').value;
+            const autor = document.getElementById('autor').value;
+
+            if (titulo === '' || autor === '') {
+                alert('Por favor, escribe título y autor');
+                return;
+            }
+
+            const lista = document.getElementById('listaLibros');
+
+            const libro = document.createElement('li');
+            libro.textContent = `${titulo} - ${autor} `;
+
+            const btnEliminar = document.createElement('button');
+            btnEliminar.textContent = 'Eliminar';
+            btnEliminar.onclick = function () {
+                lista.removeChild(libro);
+            };
+
+            libro.appendChild(btnEliminar);
+            lista.appendChild(libro);
+
+            // Limpiar campos
+            document.getElementById('titulo').value = '';
+            document.getElementById('autor').value = '';
+        }
+    </script>
+
+</body>
+</html>
+<hr>
+
+              <footer>
+    <p>📚El lugar de los libros perdidos </p>
+    <p>📱 301890674</p>
+    <p>💻 ellugardeloslibrosperdidos@gmail.com</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+      body{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+@font-face {
+    font-family: 'Concertone' ;
+    src: url(../clase_bootstrap_2025_2-10/font/ConcertOne-Regular.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 5px 10px;
+    background-color: #316596;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+        

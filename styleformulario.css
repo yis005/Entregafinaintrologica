@@ -1,0 +1,60 @@
+body{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+@font-face {
+    font-family: 'Concertone' ;
+    src: url(../clase_bootstrap_2025_2-10/font/ConcertOne-Regular.ttf);
+}
+
+table{
+    width: 80%;
+    margin-trim: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 50px;
+}
+
+caption{
+    font-size-adjust: 88px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+thead {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(179, 179, 81);
+    color: black;
+}
+
+th, td{
+    border: 2px solid black;
+    padding: 6px;
+}
+
+header, footer {
+background-color: rgb(137, 185, 223);
+text-align: center;
+}
+header img{ 
+width: 80px;
+}
+form{
+    width: 70%;
+    margin: 20px auto; 
+    padding: 30px;
+    background-color: rgb(215, 226, 228);
+}
+input img {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+.centrar{
+    margin: auto;
+    padding: auto;
+    
+    text-align: center;
+}
+

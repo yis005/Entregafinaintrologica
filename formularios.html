@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario registro solicitud</title>
+    <link rel="stylesheet" href="styleformulario.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/check-form_116472.png">
+    
+</head>
+<body>
+   <header>
+   <nav>
+        <a href="index.html">Pagina principal</a>
+        <a href="contacto.html"> Contactos</a>
+    </nav>
+    </header>
+
+ <div class="carrusel1libros">
+        <div class="carousel-item active">
+            <img src="images/bannerestes.jpeg" class="d-block w-100" alt="...">
+        </div>
+      
+    <main>
+
+        <h1>
+            <p style="text-align: center;"> Registre su solicitud </p>
+        </h1>
+        <form action="">
+            <label for="lnom">Nombre completo</label>
+            <input type="text" name="Nombre" id="lnom">
+            <br>
+            <br>
+              <label for="lnom">Documento de identidad</label>
+            <input type="text" name="Documento" id="ldoc">
+            <br>
+            <br>
+            <label for="ldir">dirección</label>
+            <input type="text" name="Dirección" id="ldir" maxlength="5">
+             <br>
+            <br>
+            <label for="ltel">Telefono</label>
+            <input type="tel" name="Telefono" id="ltel" pattern="[0-9]{10}">
+            <br>
+        <br>
+        <label for="lcorr  ">correo electronico</label>
+        <input type="email" name="EMAIL" id="lcorr">
+        <br>
+        <br>
+        <label for="lcol">Libro que busca</label>
+        <input type="text" name="Libro" id="Lib" list="libros">
+        <br>
+        <br>
+        <label for="lcontra">Ingrese su usuario</label>
+        <input type="text" name="Usuario" id="Lusuario">
+        <br>
+        <br>
+         <br>
+         <br>
+         <!-- Casila de verificación checklist -->
+          <fieldset>
+            <legend>Seleccine su area</legend>
+            <input type="checkbox" name="Tema 1" id="lt1">
+            <label for="lt1">Mant</label>
+            <br>
+            <input type="checkbox" name="tema2" id="lt2">
+            <label for="lt2">Prod</label>
+             <br>
+            <input type="checkbox" name="tema3" id="lt3">
+            <label for="lt3">RRHH</label>
+             <br>
+            <input type="checkbox" name="tema4" id="lt4">
+            <label for="lt4">Conta</label>
+           </fieldset>
+           <br>
+           <br>
+            
+              <!-- multilinea -->
+               <label for="lcoment">Quejas, reclamos, recomedación</label>
+               <br>
+               <textarea name="Comentario Sugerencia" id="lcoment" cols="100" rows="15"></textarea>
+
+<br>
+<br>
+            <!-- Boton enviar y Boton limpiar -->
+             <div class="centrar">
+             <input type="submit" value="Registrar solicitud ✅">
+             <input type="reset" value="Limpiar 🗑">
+             </div>
+
+
+        </form>
+        <footer>
+    <p>📚El lugar de los libros perdidos </p>
+    <p>📱 301890674</p>
+    <p>💻 ellugardeloslibrosperdidos@gmail.com</p>
+        </footer>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</body>
+</html>
